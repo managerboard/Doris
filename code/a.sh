@@ -1,5 +1,5 @@
 #/bin/bash
-x=`ps -elf |grep a.sh |wc -l`
+x=`ps -Ael |grep a.sh |wc -l`
 if [ $x -gt 1 ] ;then exit; fi
 
 cd $1/pic
