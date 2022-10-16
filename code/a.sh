@@ -1,6 +1,6 @@
 #/bin/bash
 
-cd ../pic
+cd $1/pic
 x=`date`.png
 screencapture -xra "$x"
 git add  "$x"
