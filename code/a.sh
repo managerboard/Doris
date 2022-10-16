@@ -7,7 +7,7 @@ i=1
 while [ $i -le 5 ]
 do
 x=`date`.png
-screencapture -xra "$x"
+/usr/sbin/screencapture -xra "$x"
 git add  "$x"
 git commit -m "$x"
 let i++
